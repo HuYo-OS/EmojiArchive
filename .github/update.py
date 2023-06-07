@@ -1,4 +1,5 @@
 import json
+import random
 from pathlib import Path
 
 root_path = Path(__file__).parent.parent.resolve()
@@ -12,10 +13,10 @@ def process_directory(directory):
     for file in directory.iterdir():
         if file.is_file() and file.suffix.lower() in image_extensions and file.name not in ignored_files:
             items.append(str(file.name))
-
+    
     if items:
         directory_name = directory.name
-        icon_name = f"{directory_name}.png"
+        icon_name = random.choice(items)
         info = {
             'name': directory_name,
             'icon': icon_name,
