@@ -1,1 +1,23 @@
-{"name": "NAP", "icon": "NAP.png", "items": ["NAP.png", "\u5b89\u6bd4_\u5934\u75db.png", "\u5b89\u6bd4_\u65e0\u8bed.png", "\u5b89\u6bd4_\u54ed\u54ed.png", "\u5b89\u6bd4_\u7591\u60d1.png", "\u6bd4\u5229_\u5bb3\u7f9e.png", "\u6bd4\u5229_\u8d70\u4f60.png", "\u6bd4\u5229_\u67d4\u5f31.png", "\u6bd4\u5229_\u6447\u6446.png", "\u7edd\u533a\u96f6_\u6697\u4e2d\u89c2\u5bdf.png", "\u5feb\u8dd1.png", "\u95ed\u5634.png", "\u6253\u4f60.png", "\u59ae\u53ef_\u751f\u6c14.png", "\u59ae\u53ef_\u9707\u60ca.png", "\u59ae\u53ef_\u54c8\u54c8.png", "\u59ae\u53ef_\u5978\u7b11.png"]}
+{
+  "name": "NAP",
+  "icon": "NAP.png",
+  "items": [
+    "NAP.png",
+    "妮可_哈哈.png",
+    "妮可_奸笑.png",
+    "妮可_生气.png",
+    "妮可_震惊.png",
+    "安比_哭哭.png",
+    "安比_头痛.png",
+    "安比_无语.png",
+    "安比_疑惑.png",
+    "快跑.png",
+    "打你.png",
+    "比利_害羞.png",
+    "比利_摇摆.png",
+    "比利_柔弱.png",
+    "比利_走你.png",
+    "绝区零_暗中观察.png",
+    "闭嘴.png"
+  ]
+}
