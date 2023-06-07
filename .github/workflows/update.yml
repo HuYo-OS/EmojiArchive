@@ -2,7 +2,7 @@ name: Update File Index
 
 on:
     push:
-      branches: [ master ]
+      branches: [ main ]
 
 jobs:
   update:
@@ -21,11 +21,3 @@ jobs:
         run: |
           cd .github
           python update.py
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: github-actions[bot]
-          author_email: github-actions[bot]@users.noreply.github.com
-          message: ':wrench: 自动更新文件索引'
-          add: |
-            'path.json'
