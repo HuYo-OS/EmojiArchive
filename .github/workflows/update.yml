@@ -1,23 +1,29 @@
-name: Update File Index
+name: Update Repository
 
 on:
-    push:
-      branches: [ main ]
+  push:
+    branches: [main]
 
 jobs:
   update:
-    name: Update File Index
+    name: Update Repository
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
-      - name: Setup python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.9
-
-      - name: Run python script
+      - name: Generate files
         run: |
-          cd .github
           python update.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "HuYo-OS"
+          git config user.email "HuYo-OS@outlook.com"
+          git add -A
+          git commit -m "Update repository"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
