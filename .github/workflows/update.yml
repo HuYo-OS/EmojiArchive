@@ -14,6 +14,7 @@ jobs:
 
       - name: Generate files
         run: |
+          cd .github
           python update.py
 
       - name: Commit changes
